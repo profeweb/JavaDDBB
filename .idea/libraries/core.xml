@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="core">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../Program Files/processing354/processing-3.5.4/core" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/processing354/processing-3.5.4/core/library/core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/processing354/processing-3.5.4/core/library/gluegen-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../Program Files/processing354/processing-3.5.4/core/library/jogl-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../../Program Files/processing354/processing-3.5.4/core" recursive="false" />
+  </library>
+</component>
