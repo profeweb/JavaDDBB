@@ -39,6 +39,15 @@ public class Main extends PApplet {
         println("\nDades Taula Unitat:");
         printArray2D(dades1);
 
+        // Insereix la Unitat
+        //insertUnitat(4, "Programació Orientada");
+
+        // Update Unitat
+        updateUnitat(4, "POO");
+
+        // Delete Unitat
+        deleteUnitat("POO");
+
     }
 
     // Connexió a la BBDD
@@ -95,6 +104,47 @@ public class Main extends PApplet {
                 print(dades[f][c]+" \t ");
             }
             println();
+        }
+    }
+
+
+
+    // Inserta noves dades a una taula
+    public void insertUnitat(int i, String n){
+        try {
+            String q = "INSERT INTO unitat (numero, nom) VALUES ('"+i+"', '"+n+"')";
+            println("INSERT: "+q);
+            query.execute( q);
+            println("INSERT OK :)");
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    // Actualitza noves dades a una taula
+    public void updateUnitat(int id, String n){
+        try {
+            String q = "UPDATE unitat SET nom='"+n+"' WHERE numero='"+id+"'";
+            println("UPDATE: "+q);
+            query.execute( q);
+            println("UPDATE OK :)");
+        }
+        catch(Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    // Elimina dades de la taula
+    public void deleteUnitat(String n){
+        try {
+            String q = "DELETE FROM unitat WHERE nom='"+n+"'";
+            println("DELETE: "+q);
+            query.execute( q);
+            println("DELETE OK :)");
+        }
+        catch(Exception e) {
+            System.out.println(e);
         }
     }
 
